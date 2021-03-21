@@ -6,6 +6,11 @@ h2{
     font-size: 15px;   
     position:relative;
     top: 20px;
+    transition:initial cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+h2:hover{
+    transform:translate(70px);
+
 }
 p{
     color: rgb(184, 166, 201);
@@ -24,12 +29,16 @@ button{
     width: 150px;
     height: 35px;
     font-size: 16px;
+    border: none;
     border-radius: 15px;
     position: relative;
     top: 150px;
     left: 120px;
+    transition: all 0.7s;
 }
-.but:hover{
-    position: absolute;
-    left: 70px;
+button:hover{
+    background: rgb(120, 7, 226);
+    color: rgb(186, 137, 231);
+    transform:translateX(40px);
+    cursor: pointer;
 }
